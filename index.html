@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Bucin ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#ff9ecf,#ffd6e8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+.box{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#ff4f81;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:15px;
+    margin:10px;
+    cursor:pointer;
+}
+
+#iya{
+    background:#ff4f81;
+    color:white;
+}
+
+#tidak{
+    background:#ddd;
+    position:absolute;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h1>💖 sayang aku? 💖</h1>
+
+<button id="iya" onclick="iya()">Iyaa </button>
+<button id="tidak" onmouseover="kabur()">nope</button>
+
+</div>
+
+<script>
+
+function iya(){
+    document.body.innerHTML=`
+    <div style="text-align:center;width:100%;">
+        <h1 style="font-size:55px;color:white;">
+        YEAAYYY AKU JUGA SAYANG KAMU
+        </h1>
+        <h2>best bf ever <3 </h2>
+    </div>
+    `;
+}
+
+function kabur(){
+
+let tombol=document.getElementById("tidak");
+
+let x=Math.random()*(window.innerWidth-120);
+
+let y=Math.random()*(window.innerHeight-60);
+
+tombol.style.left=x+"px";
+tombol.style.top=y+"px";
+
+}
+
+</script>
+
+</body>
+</html>
